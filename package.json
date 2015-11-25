@@ -10,7 +10,7 @@
   "author": "Jason Sandmeyer",
   "main": "./index.js",
   "dependencies": {
-    "lodash": "2.4.x",
+    "lodash": "3.10.x",
     "map-stream": "0.1.x",
     "preprocess": "^3.0.0"
   },
