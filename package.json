@@ -15,7 +15,7 @@
     "preprocess": "^3.0.0"
   },
   "devDependencies": {
-    "gulp-util": "2.2.x",
+    "gulp-util": "3.0.x",
     "mocha": "*",
     "should": "*"
   },
