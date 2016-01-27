@@ -98,6 +98,8 @@ Default: `{}`
 
 Context for directives used in your preprocessed files. The default context consists of the current user environment variables. Custom context is merged with `process.env`.
 
+If the `file` object contains property `data` (created by `gulp-data` plugin for example), its contents are merged to a context.
+
 #### options.includeBase
 Type: `String`
 

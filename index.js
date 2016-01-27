@@ -14,6 +14,9 @@ module.exports = function (options) {
     if (file.isNull()) return callback(null, file); // pass along
     if (file.isStream()) return callback(new Error("gulp-preprocess: Streaming not supported"));
 
+    // accept context passed from `gulp-data` plugin
+    context = _.merge(context, file.data);
+
     context.src = file.path;
     context.srcDir = opts.includeBase || path.dirname(file.path);
     context.NODE_ENV = context.NODE_ENV || 'development';
