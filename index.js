@@ -15,7 +15,7 @@ module.exports = function (options) {
     if (file.isStream()) return callback(new Error("gulp-preprocess: Streaming not supported"));
 
     // accept context passed from `gulp-data` plugin
-    if ( _.isArray(file.data) ) {
+    if ( _.isObject(file.data) || _.isArray(file.data) ) {
       context = _.merge(context, file.data);
     }
 
